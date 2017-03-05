@@ -166,7 +166,7 @@ class Opts(object):
 def mavgen_python_dialect(dialect, wire_protocol):
     '''generate the python code on the fly for a MAVLink dialect'''
     dialects = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'dialects')
-    mdef = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'message_definitions')
+    mdef = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'message_definitions')
     if wire_protocol == mavparse.PROTOCOL_0_9:
         py = os.path.join(dialects, 'v09', dialect + '.py')
         xml = os.path.join(dialects, 'v09', dialect + '.xml')
